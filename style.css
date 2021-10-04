@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    overflow-x: hidden;
+    font-family: "Muli", sans-serif;
+    width: 100vw;
+    height: 200vh;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgb(253, 238, 219);
+}
+
+.container {
+    height: 85vh;
+    width: 90vw;
+    background-color: #fff;
+   /*  box-shadow: 1px 3px 8px 0px rgba(0,0,0,0.21); */
+    border-radius: 7px;
+}
+
+.upperContainer {
+    margin-bottom: 30px;
+    height: 100vh;
+}
+nav {
+    color: rgb(122, 120, 120);
+    height: 10vh;
+    width: 100%;
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    letter-spacing: 1.2px;
+}
+nav i {
+    font-size: 26px;
+}
+nav h1 {
+    font-size: 32px;
+    color: rgb(85, 84, 84);
+}
+nav .heading span {
+    font-size: 20px;
+    opacity: 0.8;
+}
+
+.heading:hover {
+    cursor: pointer;
+}
+
+
+.heart {
+    padding: 10px;
+    /* margin-left: 20px; */
+    color:rgb(199, 195, 195);
+}
+.search {
+    padding: 10px;
+    /* margin-left: 20px; */
+    color:rgb(199, 195, 195);
+}
+
+nav i:hover{
+    cursor: pointer;
+}
+.heart:hover {
+    color: rgb(241, 46, 85);
+}
+.active-heart{
+    color: rgb(241, 46, 85);
+}
+.search:hover {
+    color: rgb(10, 212, 10);
+}
+
+.left-icon i:hover {
+    animation: round 1s linear infinite;
+    color: rgb(10, 212, 10);
+}
+
+@keyframes round {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* Image Container */
+
+.image-container {
+    margin: 40px auto 20px;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+}
+.image-container img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* Description */ 
+.description {
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+.des {
+    height: 100%;
+    width: 15%;
+}
+.des h4 {
+    color: rgb(148, 147, 147);
+    margin-bottom: 10px;
+}
+.des p {
+    font-size: 18px;
+    font-weight: bolder;
+    
+}
+
+/* random Button */
+.random-btn {
+    width: 100%;
+}
+#random {
+    margin: -15px 45%;
+    padding: 5px 40px;
+    font-size: 18px;
+    border: none;
+    background-color:rgb(243, 188, 115) ;
+    border-radius: 10px;
+    color: #fff;
+}
+#random:hover {
+    cursor: pointer;
+}   
+
+
+
+/* Bottom Container */
+#lowerContainer {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: rgb(240, 238, 238);
+
+}
+
+.info-card {
+    height: 350px;
+    width: 250px;
+    background-color: /* rgb(194, 194, 194) */ #fff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin: 5px;
+   /*  border: 1px solid rgb(36, 35, 35); */
+    transition: 0.2s linear 0s;
+
+}
+.info-card:hover {
+    cursor: pointer;
+    background-color: rgb(233, 230, 230);
+
+}
+.info-card img{
+    height: 140px;
+    width: 100%;
+    border-radius: 10px;
+    
+}
+.info-div {
+    width: 100%;
+}
+.infos {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 15px;
+    
+}
+.infos p {
+    font-size: 12px;
+    font-weight: bold;
+}
+.infos h4 {
+    opacity: 0.5;
+}
+
+
+
+/* Next 10 button */
+#next {
+    position: absolute;
+    display: block;
+    font-size: 24px;
+    padding: 10px 30px;
+    bottom: 5px;
+    left: 50%;
+    background-color: rgb(243, 188, 115) ;
+    border: none;
+    transform: translateX(-50%);
+    border-radius: 10px;
+}
+#next:hover {
+    cursor: pointer;
+}
+
+
+@media screen and (max-width : 768px){
+    body {
+        overflow-x: hidden;
+    }
+    nav {
+    color: rgb(122, 120, 120);
+    height: 12vh;
+    width: 100%;
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    letter-spacing: 0px;
+}
+nav i {
+    font-size: 16px;
+}
+nav h1 {
+    font-size: 20px;
+    color: rgb(85, 84, 84);
+}
+nav .heading span {
+    font-size: 20px;
+    opacity: 0.8;
+}
+
+/* image container */
+.image-container {
+    margin: 40px auto 20px;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+.image-container img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+
+/* Description */
+.description {
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    overflow: hidden;
+}
+.des {
+    height: 100%;
+    width: 15%;
+}
+.des h4 {
+    color: rgb(148, 147, 147);
+    margin-bottom: 10px;
+}
+.des p {
+    font-size: 13px;
+    font-weight: bolder;
+    
+}
+
+.random-btn {
+    width: 100%;
+}
+#random {
+    margin: 0px 35%;
+    padding: 5px 40px;
+    font-size: 18px;
+    border: none;
+    background-color:rgb(243, 188, 115) ;
+    border-radius: 10px;
+    color: #fff;
+}
+#random:hover {
+    cursor: pointer;
+}  
+
+
+
+
+/* Bottom Container */
+#lowerContainer {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: rgb(253, 238, 219);
+
+}
+
+.info-card {
+    height: 300px;
+    width: 200px;
+    background-color: /* rgb(194, 194, 194) */ #fff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin: 5px;
+   /*  border: 1px solid rgb(36, 35, 35); */
+    transition: 0.2s linear 0s;
+
+}
+.info-card:hover {
+    cursor: pointer;
+    background-color: rgb(233, 230, 230);
+
+}
+.info-card img{
+    height: 140px;
+    width: 100%;
+    border-radius: 10px;
+    
+}
+.info-div {
+    width: 100%;
+}
+.infos {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 15px;
+    
+}
+.infos p {
+    font-size: 12px;
+    font-weight: bold;
+}
+.infos h4 {
+    opacity: 0.5;
+}
+
+
+
+/* Next 10 button */
+#next {
+    position: absolute;
+    display: block;
+    font-size: 24px;
+    padding: 20px 40px;
+    bottom: 0;
+    left: 50%;
+    background-color: rgb(243, 188, 115) ;
+    border: none;
+    transform: translateX(-50%);
+    border-radius: 10px;
+}
+#next:hover {
+    cursor: pointer;
+}
+
+
+}
